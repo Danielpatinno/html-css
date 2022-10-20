@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        table{
+            width: 400px;
+            /*
+            border-collapse, para escolher como deixar a borda, junto ou separado
+            */
+            border-collapse: collapse;
+        }
+
+        tr{
+            background-color: gray;
+        }
+
+        .linha{
+            background-color: blue;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .dado{
+            background-color: brown;
+        }
+
+        td:hover{
+            background-color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!--
+        -Hierarquia de tabelas simples
+        -TABLE = TABELA
+        -TABLE ROWS (tr) = LINHA DE TABELA
+             TABLE HEADER (th) = CABEÇALHO DE TABELA
+             TABLE DATA (td) = DADO DE TABELA
+    -->
+    <table>
+        <tr><!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"><!--Segunda linha-->
+            <td>A2</td>
+            <td class="dado">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr><!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr><!--Quarta linha-->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
