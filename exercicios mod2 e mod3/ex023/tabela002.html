@@ -7,20 +7,26 @@
     <title>Tabelas</title>
     <style>
         body{
-            background-color: darkseagreen;
+            background-color: white;
             font-family: arial;
         }
 
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th, td {
             border: 1px solid black;
-            background-color: white;
+
             color: black;
             padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
         }
 
         th{
@@ -39,11 +45,17 @@
             color: blue;
         }
 
-        tbody {
-            background-color: blue;
+        tbody tr:nth-child(2n) { /*Efeito zebrado*/
+            background-color: aqua;
         }
 
-        
+        caption{
+           font-size: 1em;
+           font-weight: bol;
+           padding: 10px;
+           background-color: gray;
+
+        }    
     </style>
 </head>
 <body>
@@ -60,10 +72,13 @@
     -->
 
     <table>
+        <caption>
+            POPULAÇÃO DO BRASIL
+        </caption>
         <thead>
-            <th>POSIÇÃO</th>
-            <th>ESTADO</th>
-            <th>POPULAÇÃO</th>
+            <th scope="col">POSIÇÃO</th>
+            <th scope="col">ESTADO</th>
+            <th scope="col">POPULAÇÃO</th>
         </thead>
         <tbody>
             <tr>
@@ -209,10 +224,162 @@
                     4.269.995
                 </td>
             </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+            </tr>
+            <tr>
+                <td class="pos">
+                    13
+                </td>
+                <td class="pop">
+                    Amazanonas
+                </td>
+                <td class="num">
+                    4.269.995
+                </td>
+                <tr>
+                    <td class="pos">
+                        13
+                    </td>
+                    <td class="pop">
+                        Amazanonas
+                    </td>
+                    <td class="num">
+                        4.269.995
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pos">
+                        13
+                    </td>
+                    <td class="pop">
+                        Amazanonas
+                    </td>
+                    <td class="num">
+                        4.269.995
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pos">
+                        13
+                    </td>
+                    <td class="pop">
+                        Amazanonas
+                    </td>
+                    <td class="num">
+                        4.269.995
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pos">
+                        13
+                    </td>
+                    <td class="pop">
+                        Amazanonas
+                    </td>
+                    <td class="num">
+                        4.269.995
+                    </td>
+                </tr>
+            </tr>
+
         </tbody>
         <tfoot>
+            <tr>
+                <th>Total</th>
+                <td id="total">1.000.000.000</td>
+            </tr>
+
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero commodi totam facere alias iste vero corporis nobis, officiis minus eveniet harum, quasi eos illum ipsam, aliquam autem cum dicta repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut porro quidem placeat rem dolore eos quam. Aspernatur eius harum deleniti quaerat enim, sapiente repudiandae quos nihil voluptatibus dolor dolorum alias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque nesciunt esse illum, corporis velit ullam explicabo voluptate dolore officiis doloribus, est dignissimos! Voluptate amet quasi quas inventore, perspiciatis culpa?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quidem nam? Aliquid repellat maxime explicabo ipsum dolores veritatis quod consectetur doloremque expedita perspiciatis? In magni possimus aperiam perferendis ex deleniti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, obcaecati. Officiis quos quasi quo ducimus iste ad itaque minima saepe rerum eligendi deserunt ut quas, provident similique fuga adipisci a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione est eos, laboriosam sunt totam repellat, distinctio facilis omnis dignissimos nesciunt neque architecto. Illum quod autem ab, neque numquam quam vel.
+    </p>
 </body>
 </html>
