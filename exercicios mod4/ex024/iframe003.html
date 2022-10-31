@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 90%;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam animi debitis asperiores voluptate! Aspernatur ratione minima rerum molestiae consequatur, quasi quo modi perferendis! Veniam optio quibusdam, ducimus nostrum officia possimus.</p>
+
+    <!--
+        Se dar um name para o iframe e em algum link usar a tag target y direcionar para o iframe atraves do nome, a página do link irá aparecer no iframe
+        target significa alvo, no caso o alvo do link é o iframe
+    -->
+
+    <ul>
+        <li><a target="frame" href="pag extras/pag1.html">Primeira página</a></li>
+        <li><a target="frame" href="iframe001.html">Segunda página</a></li>
+        <li><a href="#">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi atque rem! Rerum, dolores. Aperiam dolor nesciunt optio assumenda possimus dolorum nemo, eius adipisci itaque dignissimos aut quis? Necessitatibus, optio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nostrum iure sequi repudiandae rem vitae, dolorum, optio similique illo, distinctio iste debitis odit placeat eligendi minima quos aliquam. Dolore, minus.</p>
+
+    <iframe name="frame" id="tela" src="">
+        <p>Infelimente seu navegador não é compativel com isso</p>
+    </iframe>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, tempora qui ipsum saepe ducimus sint fugiat unde et sapiente temporibus, adipisci labore fugit praesentium aperiam cupiditate! Consectetur totam cumque reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates iste tenetur vitae? Debitis accusamus laborum magnam nemo impedit nam! Itaque facilis praesentium molestiae ut totam placeat modi est ea.</p>
+</body>
+</html>
